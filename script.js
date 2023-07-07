@@ -2,7 +2,7 @@
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
 
-//this code has a lot of console logs, so i check i dont do anything stupid, but certainly you can "//"" them.
+//this code has a some console logs, so i check i dont do anything stupid, but certainly you can "//"" them.
 
 //1. with the first line of the code "$function () {..." we apply a wrap on it, so that it is only executed when the dom has loaded completely.
 
@@ -49,4 +49,8 @@ $(function () {
       $(this).find(".description").val(savedInput);
     }
   });
+
+  // 9. Finally we added this lines to add the current date in the header of the page using dayjs 
+  var currentDate = dayjs().format("MMMM D, YYYY");
+  $("#currentDay").text(currentDate);
 });
