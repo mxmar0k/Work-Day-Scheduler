@@ -3,7 +3,7 @@ This is a simple calendar app, that allows the user to save events for a typical
 
 You can find the repository here: https://github.com/mxmar0k/Work-Day-Scheduler
 
-and the app, live, here:
+and the app, live, here: https://mxmar0k.github.io/Work-Day-Scheduler/ 
 
 The app is simple, we have an html with 8 divs using this format:
 
