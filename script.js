@@ -34,7 +34,7 @@ $(function () {
     console.log(hour);
     if (hour < currentHour) {
       $(this).addClass("past");
-    } else if (hour === currentHour) {
+    } else if (hour == currentHour) {
       $(this).addClass("present");
     } else {
       $(this).addClass("future");
@@ -53,4 +53,8 @@ $(function () {
   // 9. Finally we added this lines to add the current date in the header of the page using dayjs 
   var currentDate = dayjs().format("MMMM D, YYYY");
   $("#currentDay").text(currentDate);
+
+
+  var currentTime = dayjs();
+  console.log(currentTime);
 });
